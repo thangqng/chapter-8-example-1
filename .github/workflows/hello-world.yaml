@@ -29,6 +29,6 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
-      # Runs our our "Hello world" shell script.
-      - name: Runs the "Hello world" shell script
-        run: ./index.sh
+      # Runs shell command directly instead of via shell script
+      - name: Prints hello world
+        run: echo "Hello world!"
