@@ -30,5 +30,12 @@ jobs:
       - uses: actions/checkout@v3
 
       # Runs shell command directly instead of via shell script
-      - name: Prints hello world
-        run: echo "Hello world!"
+      - name: First step
+        run: |
+          echo "First step > command 1"
+          echo "First step > command 2"
+
+      - name: Second step
+        run: |
+          echo "Second step > command 1"
+          echo "Second step > command 2"
